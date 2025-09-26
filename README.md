@@ -1,11 +1,11 @@
-# 🛰️ Búsqueda de sobrevivientes con Drones usando PSO
+#  Búsqueda de sobrevivientes con Drones usando PSO
 
 Este proyecto simula la **coordinación de 10 drones autónomos** para la búsqueda de sobrevivientes en una zona costera inundada después de un tsunami.  
 Se utiliza el algoritmo de **Optimización por Enjambre de Partículas (PSO)** para posicionar los drones de forma que se **maximice la probabilidad de encontrar sobrevivientes** en el menor tiempo posible.
 
 ---
 
-## 📌 Escenario del Problema
+##  Escenario del Problema
 
 - **Área de búsqueda:** 5 km × 5 km (coordenadas: 0 a 5000 metros).  
 - **Número de drones:** 10.  
@@ -17,7 +17,7 @@ El reto es **coordinar los drones** para cubrir las áreas con mayor probabilida
 
 ---
 
-## 🎯 Objetivo
+##  Objetivo
 
 Implementar un algoritmo **PSO (Particle Swarm Optimization)** que:  
 
@@ -27,7 +27,7 @@ Implementar un algoritmo **PSO (Particle Swarm Optimization)** que:
 
 ---
 
-## ⚙️ Funcionamiento del Código
+##  Funcionamiento del Código
 
 ### 1. Parámetros principales
 ```python
