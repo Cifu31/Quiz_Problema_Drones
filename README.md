@@ -41,22 +41,22 @@ PARTICULAS = 30        # tamaño del enjambre
 ## 2. Mapa de Probabilidades
 
 Se genera un mapa aleatorio donde cada celda tiene un valor de probabilidad asociado a la presencia de sobrevivientes:
-
+```python
 def generar_mapa_probabilidades(tamaño=50):
     mapa = np.random.rand(tamaño, tamaño)
     return mapa / np.sum(mapa)
-
+```
 
 El resultado es una matriz normalizada (la suma de todas las probabilidades es 1).
 
 ## 3. Función de Fitness
 
 Evalúa qué tan buenas son las posiciones de los drones midiendo la probabilidad cubierta en sus radios de detección:
-
+```python
 def fitness(posiciones, mapa):
     # Calcula el área cubierta por los drones
     # Retorna la probabilidad total cubierta
-
+```
 
 Mientras más drones estén en zonas amarillas/claras, mejor será el fitness.
 
@@ -73,13 +73,13 @@ Inercia: mantiene la dirección actual.
 Cognitivo: mueve hacia la mejor posición individual encontrada.
 
 Social: mueve hacia la mejor posición global encontrada.
-
+```python
 particle.velocity = (
     inertia * particle.velocity
     + cognitive
     + social
 )
-
+```
 
 Al final, obtenemos la mejor disposición de los drones.
 
@@ -92,11 +92,11 @@ Fondo en colores: mapa de probabilidades.
 Puntos azules: drones.
 
 Círculos punteados: radios de detección de 200 m.
-
+```python
 plt.imshow(mapa.T, origin='lower', cmap='hot', extent=[0, AREA_SIZE, 0, AREA_SIZE])
 plt.plot(x, y, 'bo')  # drones
 plt.Circle((x, y), RADIO_DETECCION, color='blue', fill=False, linestyle="--")
-
+```
 
 
 ## Conceptos Clave
