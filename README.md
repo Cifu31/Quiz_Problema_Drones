@@ -107,10 +107,4 @@ Exploración vs Explotación: el enjambre explora varias soluciones y converge a
 
 Fitness: en este caso es la probabilidad acumulada de sobrevivientes cubierta por los drones.
 
-## 3 Posibles Mejoras
 
-Usar un mapa real de probabilidades basado en datos de terreno o simulación.
-
-Introducir movimiento dinámico de los drones en función del tiempo.
-
-Crear una animación mostrando cómo los drones cambian de posición durante las iteraciones del PSO.
